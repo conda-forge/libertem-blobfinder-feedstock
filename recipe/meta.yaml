@@ -1,13 +1,13 @@
 {% set name = "libertem-blobfinder" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/libertem-blobfinder-{{ version }}.tar.gz
-  sha256: 340034189d289a250f5476f2ec16361d5ebbb0628b416e211505fac26974804a
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 78c8fd83bb212d6f4bd3db74788a48c51aafa33603e5db6e3a4c2b549bafe6e5
 
 build:
   noarch: python
