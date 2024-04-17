@@ -16,15 +16,19 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.9
+    - hatchling
+    - hatch-fancy-pypi-readme
     - pip
   run:
-    - python >=3.7
+    - python >=3.9
     - numpy
     - numba >=0.49
-    - pyfftw
     - scikit-image
     - hdbscan
+    - sparseconverter
+    - scipy
+    - sparse
 
 test:
   imports:
